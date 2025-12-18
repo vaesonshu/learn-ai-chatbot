@@ -69,3 +69,9 @@ pnpm dev
 ```
 
 Your app template should now be running on [localhost:3000](http://localhost:3000).
+
+## 技术栈
+
+- 开发套件：https://ai-sdk.dev/docs/introduction、https://vercel.com/ai-gateway
+- 线上数据库：https://neon.com
+- ORM: https://drizzle.dev

@@ -5,6 +5,7 @@ import {
   wrapLanguageModel,
 } from "ai";
 import { isTestEnvironment } from "../constants";
+import { deepseek } from "@ai-sdk/deepseek";
 
 const THINKING_SUFFIX_REGEX = /-thinking$/;
 
@@ -44,7 +45,8 @@ export function getLanguageModel(modelId: string) {
     });
   }
 
-  return gateway.languageModel(modelId);
+  // return gateway.languageModel(modelId);
+  return deepseek.languageModel("deepseek-chat");
 }
 
 export function getTitleModel() {
